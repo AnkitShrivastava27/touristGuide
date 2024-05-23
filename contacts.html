@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <style>
+        html,body{
+            height:100%;
+            width:100%;
+        }
+        header {
+  background-color: #0d88e6;
+  color: #000000;
+  padding: 10px;
+  height:5%;
+  width: 100%;
+  margin:0;
+}
+header a{
+  color: #000000;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:0;
+}
+
+nav .logo {
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+    </style>
+</head>
+<body>
+    <img src="images/topLogo.jpg" style="height:20% ; width: 100%;" >
+    <header>
+      
+        <nav>
+            <div class="logo">TryIndia.Com</div>
+            <ul class="nav-links">
+                <li ><a href="index.html">Home</a></li>
+             
+            </ul>
+        </nav>  
+    </header>
+<h1>Contact Us</h1>
+
+<form action="/submit_contact_form" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

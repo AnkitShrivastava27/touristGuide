@@ -1,0 +1,179 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    height:100%;
+    width: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(images/bg.webp);
+    background-size:cover;
+    height: 100%;
+    width:100%;
+}
+
+header {
+    background-color: #0d88e6;
+    color: #000000;
+    padding: 10px;
+    height:5%;
+    width: 100%;
+    margin:0;
+}
+header a{
+    color: #000000;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0;
+}
+
+nav .logo {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+.container{
+    height:100%;
+    width: 100%;
+    background-color: rgba(37, 37, 53, 0.67);
+    
+}
+
+.div1 {
+    background-image: url(images/india-travelts.png);
+    background-size: cover;
+    height:70%;
+    width:30%;
+    color: #000000;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+    left :36%;
+    
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    
+}
+
+
+/* Style for the text with hover effect */
+.point1 {
+    position: relative;
+    top:30%;
+    left:36%;
+}
+.point2 {
+    position: relative;
+    top:20%;
+    left:34%;
+}
+.point3 {
+    position: relative;
+    top:60%;
+    left:20%;
+}
+.point4{
+    position: relative;
+    top:40%;
+    left:22%; 
+}
+.point5{
+    position: relative;
+    top:94%;
+    left:41%; 
+}
+
+.point:hover .popup {
+    display: block;
+}
+.popupimage{
+    height:100px; width:200px
+}
+.cta-button {
+    display: inline-block;
+    background-color: #ff9900;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-left: 150px;
+}
+.insideimage{
+    height:70%;
+    width:70%;
+    margin-left: 14%;
+}
+.destinations{
+    height:40%;
+    width:100%;
+    margin-top:10px;
+    
+}
+.destination-card{
+    width:24%;
+    height: 100%;
+    margin:5px;
+    float:left;
+    border: 2px solid red;
+    background-color: #0d88e6;
+}
+.more{
+    padding-left: 44%;
+}
+footer{
+    margin-top: 2%;
+    ;
+    width:100%;
+    
+    background-color: #000000;
+}
+.foot{
+    width:50%;
+    height:20%;
+    padding-top: 2%;
+    margin:5px auto;
+    float:left;
+    background-color: #000000;
+    
+}
+.foot h2 , p{
+    color: white;
+    text-align: center;
+}
+.cnt span{
+    color: white;
+}
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+}

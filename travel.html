@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transport Ticket Booking</title>
+    <link rel="stylesheet" href="travel.css">
+</head>
+<body>
+
+    <img src="images/topLogo.jpg" style="height:20% ; width: 100%;" >
+    <header>
+      
+        <nav>
+            <div class="logo">TryIndia.Com</div>
+            <ul class="nav-links">
+                <li ><a href="index.html">Home</a></li>
+             
+            </ul>
+        </nav>  
+    </header>
+
+<div class="container">
+    <h2>Transport Ticket Booking</h2>
+    <form id="booking-form">
+        <div class="form-group">
+            <label for="transport-type">Select Transport:</label>
+            <select id="transport-type" name="transport" onchange="showForm()">
+                <option value="flight">Flight</option>
+                <option value="train">Train</option>
+                <option value="bus">Bus</option>
+            </select>
+        </div>
+        <div id="flight-form" class="form-hidden">
+            
+            <h3>Flight Ticket Booking</h3>
+    
+                    <h2>Flight Ticket Booking</h2>
+                    
+                        <label for="departure">Departure City:</label>
+                        <input type="text" id="departure" name="departure" required>
+                    
+                        <label for="arrival">Arrival City:</label>
+                        <input type="text" id="arrival" name="arrival" required>
+                  
+                        <label for="date">Departure Date:</label>
+                        <input type="date" id="date" name="date" required>
+                   
+                        <label for="passengers">Number of Passengers:</label>
+                        <input type="number" id="passengers" name="passengers" min="1" required>
+                 
+                
+            
+        </div>
+        <div id="train-form" class="form-hidden">
+            
+            <h3>Train Ticket Booking</h3>
+            <label for="departure">From Statation:</label>
+            <input type="text" id="departure" name="departure " required>
+        
+            <label for="arrival">To Station:</label>
+            <input type="text" id="arrival" name="arrival " required>
+      
+            <label for="date">Departure Date:</label>
+            <input type="date" id="date" name="date" required>
+       
+            <label for="passengers">Number of Passengers:</label>
+            <input type="number" id="passengers" name="passengers" min="1" required>
+        </div>
+        <div id="bus-form" class="form-hidden">
+            
+            <h3>Bus Ticket Booking</h3>
+            <label for="departure">From Bus Stand::</label>
+                        <input type="text" id="departure" name="departure" required>
+                    
+                        <label for="arrival">To Bus Stand:</label>
+                        <input type="text" id="arrival" name="arrival" required>
+                  
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" required>
+                        <label for="passengers">bus no:</label>
+                        <input type="number" id="passengers" name="passengers" min="1" required>
+
+                        <label for="passengers">Number of Passengers:</label>
+                        <input type="number" id="passengers" name="passengers" min="1" required>
+        </div>
+        <button type="submit">Book Now</button>
+    </form>
+</div>
+
+<script src="travel.js"></script>
+</body>
+</html>

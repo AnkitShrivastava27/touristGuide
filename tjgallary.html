@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TajMahal Gallary</title>
+    <style>
+        html , body{
+            height:100%;
+            width:100%;
+        }
+        #logo{
+            height: 20%;
+           
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 3;
+            }
+            .nav{
+              background-color: #777777ba;
+              height:5%;
+              width:100%;
+              position: fixed;
+              top:20%;
+              z-index: 2;
+            }
+            .main{
+              height: 90%;
+              width:100%;
+              position:relative;
+              top:25%;
+              z-index: 1;
+            }
+   .dimension{
+    height: 33%;
+    width: 33%;
+   }
+        
+        div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+.dimension{
+    height: 33%;
+    width: 33%;
+   }
+  
+
+@media only screen and (max-width: 66px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+img:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+    </style>
+</head>
+<body>
+  <img src="images/topLogo.jpg" height="5%" width="100%" id="logo">
+  <nav class="nav"><a href="index.html"><img src="images/home.png" class="home"></a>
+    
+  </nav>
+<div class="main">
+  <div class="responsive dimension" >
+    <div class="gallery">
+      <a target="_blank" href="images/tj1.jpg">
+        <img src="images/tj1.jpg" alt="Cinque Terre">
+      </a>
+      
+    </div>
+  </div>
+  
+  <div class="responsive dimension">
+    <div class="gallery">
+      <a target="_blank" href="images/tj2.jpg">
+        <img src="images/tj2.jpg" alt="Forest">
+      </a>
+      
+    </div>
+  </div>
+  
+  <div class="responsive dimension">
+    <div class="gallery">
+      <a target="_blank" href="images/tj3.jpg">
+        <img src="images/tj3.jpg" alt="Northern Lights">
+      </a>
+      
+    </div>
+  </div>
+  
+  <div class="responsive dimension">
+    <div class="gallery">
+      <a target="_blank" href="images/tj4.jpg">
+        <img src="images/tj4.jpg" alt="Mountains">
+      </a>
+      
+    </div>
+  </div>
+  <div class="responsive dimension">
+    <div class="gallery">
+      <a target="_blank" href="images/tj5.jpg">
+        <img src="images/tj5.jpg" alt="Mountains">
+      </a>
+     
+    </div>
+  </div>
+  <div class="responsive dimension">
+    <div class="gallery">
+      <a target="_blank" href="images/tj6.jpg">
+        <img src="images/tj6.jpg" alt="Mountains">
+      </a>
+      
+    </div>
+  </div>
+  <div class="responsive dimension">
+    <div class="gallery">
+      <a target="_blank" href="images/tj7.jpg">
+        <img src="images/tj7.jpg" alt="Mountains">
+      </a>
+      
+    </div>
+  </div>
+  <div class="responsive dimension">
+    <div class="gallery">
+      <a target="_blank" href="images/tj8.jpg">
+        <img src="images/tj8.jpg" alt="Mountains">
+      </a>
+      
+    </div>
+  </div>
+  <div class="responsive dimension">
+    <div class="gallery">
+      <a target="_blank" href="images/tj9.jpg">
+        <img src="images/tj9.jpg" alt="Mountains">
+      </a>
+     
+    </div>
+  </div>
+</div>
+    
+<footer>
+  &copy; 2023 ts.com
+</footer>
+</body>
+</html>
